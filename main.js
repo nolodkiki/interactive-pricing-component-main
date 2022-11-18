@@ -29,6 +29,6 @@ function changeCost() {
 
 function inner(num) {
     const value = slider.value
-    pageviews.innerText = `${views[value]} Pageviews`
+    pageviews.innerText = `${views[value]} Pageviews кеклол`
     cost.innerHTML = `$${price[value] * num}.00<span>/month</span>`
 }
