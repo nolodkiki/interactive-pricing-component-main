@@ -1,3 +1,19 @@
+const card = document.querySelector('.card')
+const cardOffer = document.querySelector('.card__offer')
+if (card.clientWidth === 300) {
+    cardOffer.innerHTML = `
+    <div class="offer__title">Monthly Billing</div>
+    <label class="switch">
+      <input id="switch" type="checkbox">
+      <span class="slider round"></span>
+    </label>
+    <div class="offer__title">Yearly Billing <span>25%</span></div>
+    `
+}
+
+
+
+
 const slider = document.querySelector('#range')
 const pageviews = document.querySelector('#pageviews')
 const cost = document.querySelector('#cost')
@@ -32,3 +48,4 @@ function inner(num, period) {
     pageviews.innerText = `${views[value]} Pageviews`
     cost.innerHTML = `$${price[value] * num}.00<span>/${period}</span>`
 }
+
