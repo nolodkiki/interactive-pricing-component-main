@@ -21,14 +21,14 @@ function changeCost() {
     const chk = switchBtn.checked
     const yearCost = 12 * .75
     if (chk) {
-        inner(yearCost)
+        inner(yearCost, 'year')
     } else {
-        inner(1)
+        inner(1, 'month')
     }
 }
 
-function inner(num) {
+function inner(num, period) {
     const value = slider.value
-    pageviews.innerText = `${views[value]} Pageviews кеклол`
-    cost.innerHTML = `$${price[value] * num}.00<span>/month</span>`
+    pageviews.innerText = `${views[value]} Pageviews`
+    cost.innerHTML = `$${price[value] * num}.00<span>/${period}</span>`
 }
