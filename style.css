@@ -299,8 +299,17 @@ body {
         padding: 50px 30px;
     }
 }
+@media (max-width:625px) {
+    .card {
+        max-width: 400px;
+        padding: 50px 30px;
+    }
+    .card__offer {
+        font-size: 10px;
+    }
+}
 
-@media (max-width: 375px) {
+@media (max-width: 475px) {
     .title {
         font-size: 20px;
     }
